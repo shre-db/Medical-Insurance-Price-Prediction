@@ -21,21 +21,21 @@
 
                 <div class="data" >
                     <label>Age</label>
-                    <input class="input-color" type="text" name="age" placeholder=" 27">
+                    <input class="input-color" type="text" name="age" placeholder="27">
                 </div>
 
 
 
                 <div class="data">
                     <label>BMI</label>
-                    <input class="input-color" type="text" name="heat" placeholder=" 24.6">
+                    <input class="input-color" type="text" name="bmi" placeholder="24.6">
                 </div>
 
 
 
                 <div class="data">
                     <label>Children</label>
-                    <input class="input-color" type="text" name="heat" placeholder=" 3">
+                    <input class="input-color" type="text" name="children" placeholder="3">
                 </div>
 
 
@@ -55,36 +55,36 @@
 
 
                 <fieldset>
-                    <legend>Region</legend>
+                    <legend>Smoker</legend>
                     <div class="data">
-                        <label for="NE">N-East</label>
-                        <input class="input-color" id="NE" type="radio" name="region" value="NE" checked>
+                        <label for="yes">Yes</label>
+                        <input class="input-color" id="yes" type="radio" name="smoke" value="yes" checked>
                     </div>
                     <div class="data">
-                        <label for="NW">N-West</label>
-                        <input class="input-color" id="NW" type="radio" name="region" value="NW">
-                    </div>
-                    <div class="data">
-                        <label for="SW">S-West</label>
-                        <input class="input-color" id="SW" type="radio" name="region" value="SW">
-                    </div>
-                    <div class="data">
-                        <label for="SE">S-East</label>
-                        <input class="input-color" id="SE" type="radio" name="region" value="SE">
+                        <label for="no">No</label>
+                        <input class="input-color" id="no" type="radio" name="smoke" value="no">
                     </div>
                 </fieldset>
 
 
 
                 <fieldset>
-                    <legend>Smoker</legend>
+                    <legend>Region</legend>
                     <div class="data">
-                        <label for="yes">Yes</label>
-                        <input class="input-color" id="yes" type="radio" name="smoke" value="smoker" checked>
+                        <label for="NE">N-East</label>
+                        <input class="input-color" id="NE" type="radio" name="region" value="northeast" checked>
                     </div>
                     <div class="data">
-                        <label for="no">No</label>
-                        <input class="input-color" id="no" type="radio" name="smoke" value="nonsmoker">
+                        <label for="NW">N-West</label>
+                        <input class="input-color" id="NW" type="radio" name="region" value="northwest">
+                    </div>
+                    <div class="data">
+                        <label for="SW">S-West</label>
+                        <input class="input-color" id="SW" type="radio" name="region" value="southwest">
+                    </div>
+                    <div class="data">
+                        <label for="SE">S-East</label>
+                        <input class="input-color" id="SE" type="radio" name="region" value="southeast">
                     </div>
                 </fieldset>
 
@@ -98,7 +98,7 @@
 
                 <div class="pred-result">
                     <p>Predicted Cost</p>
-                    <p id="cost">$0.00</p>
+                    <p id="cost">{{ prediction }}</p>
                 </div>
 
 
@@ -109,10 +109,11 @@
     <section id="footer">
         <p class="limitation">
             "The information presented on this website is for educational purposes only and the author cannot
-            be held responsible for any damages resulting from its use or application. Data is sourced from
-            <a href="">Kaggle</a>. For transparency, the author invites you to visit their
-            <a href="https://github.com/shre-db/Medical-Insurance-Price-Prediction">GitHub repository</a> to view
-            the Jupyter notebook and review the methodology."
+            be held responsible for any damages resulting from its use or application. It is important to note
+            that there may be other factors that impact the cost of healthcare services beyond the variables
+            included in the dataset. Data is sourced from <a href="">Kaggle</a>. For transparency, the author
+            invites you to visit their <a href="https://github.com/shre-db/Medical-Insurance-Price-Prediction">GitHub repository</a>
+            to view the Jupyter notebook and review the methodology."
         </p>
         <footer>
             <p class="copyright">Copyright © 2023 Shreyas</p>
